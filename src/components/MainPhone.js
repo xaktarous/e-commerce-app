@@ -38,7 +38,7 @@ const MainPhone = ({setStateCounter}) => {
   return (
    <main className="main-phone">
    <div className="left-main-s-p">
-      <div className="prev-next">
+      <div className="prev-next-phone">
    
     <div className={!istoggle.th1 ? "cadre-prev cadre" :"cadre-prev cadre "} onClick={handlePrev}>
     <svg   width="13" height="18" xmlns="http://www.w3.org/2000/svg" className="prev" ><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="2" fill="none" fill-rule="evenodd"/></svg> 

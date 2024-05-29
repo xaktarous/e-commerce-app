@@ -447,12 +447,16 @@ font-weight: bold;
     display: none;
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:450px) {
+  *{
+    overflow: hidden;
+  }
     .aside{
         display: none;
     }
    .header{
     display: none;
+    
    }
     .main{
         display: none;
@@ -463,10 +467,11 @@ font-weight: bold;
         width: 100vw;
         justify-content: space-between;
         align-items: center;
-        padding-left:50px;
+        
     }
     .avatar{
         width: 35px;
+        margin-right: 5px;
     }
     .nav-bar-r{
         gap: 10px;
@@ -481,7 +486,7 @@ font-weight: bold;
     }
     .carte{
     top: 80px;
-    right: 15px;
+    right: 10px;
     width: 95vw;
     z-index: 30;
     height: 250px;
@@ -499,6 +504,8 @@ font-weight: bold;
     }
     .text-price{
         font-size: 17px;
+        margin: 0;
+        padding-top: 12px;
     }
     .prod-img{
         width: 50px;
@@ -507,7 +514,8 @@ font-weight: bold;
     .bt-pbl{
     margin-top: 10px;
     margin-left: 10px;
-    width: 12px;
+    width: 20px;
+    height: 20px;
     }
     .btn{
         height: 50px;
@@ -516,34 +524,42 @@ font-weight: bold;
     .btn-menu{
         border: none;
         background-color: #fff;
+        margin-left: 5px;
     }
     /***********************************/
     .main-phone{
         display: block;
     }
-    .prev-next{
+    .prev-next-phone{
         display: flex;
       margin: 0;
        align-items: center;
        gap: 0px ;
        justify-content: center;
-    margin-right: 10px;
+       width: 100vw;
+     }
+     .left-main-s-p{
+        width: 100vw;
      }
    .image-prod1-s{
     margin-top: 0;
     border-radius: 0px;
     width: 100vw;
-    height: 300px;
-   
+    height: 280px;
+    padding: 0;
+    margin: 0;
+    
    }
    .cadre-prev{
-     position: relative;
-     left: 40px;
+     position: fixed;
+     left: 20px;
      margin: 0;
+     
    }
+   
    .cadre-next{
-    position: relative;
-    right: 40px;
+    position: fixed;
+    right: 20px;
     margin: 0;
   }
   .vis{
@@ -551,8 +567,8 @@ font-weight: bold;
   }
 
   .right-main{
-    width: 100%;
-    margin-left: 50px;
+    width: 100vw;
+    margin-left: 20px;
   }
  .title-prod{
     font-size: 30px;
@@ -595,7 +611,7 @@ font-weight: bold;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 15;
@@ -625,4 +641,5 @@ font-weight: bold;
    .nav-link-p a:hover,.nav-link-p a:focus{
     color: orange;
    }
+ 
 }
